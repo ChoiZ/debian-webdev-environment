@@ -2,7 +2,7 @@
 nginx_worker_processes: 4
 nginx_user: www-data
 nginx_fcgi_fpm: false
-nginx_status_ranges: ["127.0.0.1", "192.168.1.0/24"]
+nginx_status_ranges: ["127.0.0.1", "192.168.0.0/24"]
 
 nginx_fastcgi_upstreams:
 - name: www
