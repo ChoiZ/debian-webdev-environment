@@ -1,7 +1,7 @@
 <style>
 .container {
     width: 400;
-    margin: 30px auto; 
+    margin: 30px auto;
 }
 </style>
 <div class="container">

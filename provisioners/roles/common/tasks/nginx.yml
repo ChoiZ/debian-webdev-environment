@@ -9,12 +9,12 @@
 
 - name: Nginx | Copy vhost files
   copy: src="{{ templates_dir }}/nginx/sites-available/webserver1" dest=/etc/nginx/sites-available owner=root group=root  mode=600
-  notify: 
+  notify:
   - nginx-restart
 
 - name: Nginx | Create vhost symlinks
   file: path=/etc/nginx/sites-enabled/webserver state=link src=/etc/nginx/sites-available/webserver1
-  notify: 
+  notify:
   - nginx-restart
 
 - name: Nginx | Remove default vhost
